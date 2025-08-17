@@ -58,7 +58,7 @@ body {
 
 body {
     font-family: var(--font-Manrope);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     position: relative;
     height: 100%;
@@ -274,6 +274,7 @@ p {
     font-weight: 500;
     padding: 0.938rem 2.625rem;
     background-color: var(--linear-main);
+    border-radius: 6px;
     cursor: pointer;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
