@@ -65,6 +65,7 @@ body {
     width: 100%;
     color: var(--dark-03);
     background-color: var(--body-bg);
+    overflow-x: hidden;
 }
 
 h1,
@@ -107,7 +108,12 @@ ul li {
 }
 
 p {
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .section-ptb {
@@ -272,8 +278,9 @@ p {
     font-family: var(--font-Manrope);
     font-size: 1rem;
     font-weight: 500;
-    padding: 0.938rem 2.625rem;
-    background-color: var(--linear-main);
+    padding: 0.938rem 2.375rem;
+    background: var(--linear-main);
+    color: var(--white-color);
     border-radius: 6px;
     cursor: pointer;
     -webkit-transition: all .4s ease;
@@ -290,3 +297,83 @@ p {
 
 /* [ Hero Section Style ] */
 /*================================================== */
+.hero-content {
+    padding-top: 4.250rem;
+}
+
+.hero-content>.row {
+    align-items: center;
+}
+
+/* Left Side */
+.hero-content .hero-head {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 1.125rem;
+}
+
+.hero-content .button {
+    margin-top: 24px;
+}
+
+.hero-content .button i {
+    font-size: 1.125rem;
+    vertical-align: middle;
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .hero-content .hero-head {
+        font-size: 4.250rem;
+    }
+}
+
+/* Right Side */
+.hero-image {
+    position: relative;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 351px;
+    height: 351px;
+    border-radius: 50%;
+    background: var(--linear-2);
+    z-index: -1;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(100px);
+}
+
+.hero-popup {
+    position: absolute;
+    bottom: 12px;
+    left: 68px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 1.125rem 1.625rem;
+    border-radius: 6px;
+    background: var(--white-color);
+    -webkit-box-shadow: 0px 7px 50px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 7px 50px rgba(0, 0, 0, 0.06);
+}
+
+.hero-popup img {
+    width: 48px;
+}
+
+.hero-popup .popup-reating {
+    margin-left: 0.875rem;
+}
+
+.popup-reating h5 {
+    font-size: 1.750rem;
+    font-weight: 800;
+    margin-bottom: 0.125rem;
+}
