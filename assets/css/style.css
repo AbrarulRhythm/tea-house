@@ -1,0 +1,291 @@
+/*
+Template Name: Tea House
+Template URI: #
+GitHub Repository URI: https://github.com/AbrarulRhythm/tea-house.git
+File Description: Main css file of the template
+*/
+
+/*------------------------------------------------------------------
+[Table of Contents]
+    + General
+        - Variable Define
+        - Common CSS
+        - Container Default CSS
+        - Grid System (Flexbox-based)
+        + Helpers Classes
+            - Font Family
+            - Color
+    + Buttons
+    + Section Title
+    + Header Style
+    + Hero Section Style
+------------------------------------------------------------------*/
+
+/* [ General ] */
+/*================================================== */
+
+/*** Variable Define ***/
+:root {
+    /* Font Family */
+    --font-Manrope: "Manrope", sans-serif;
+
+    /* Color */
+    --dark-01: #1C1C1C;
+    --dark-02: #494949;
+    --dark-03: #777777;
+    --dark-04: #A4A4A4;
+    --dark-05: #D2D2D2;
+    --dark-06: #E8E8E8;
+    --dark-07: #F4F4F4;
+    --white-color: #FFFFFF;
+    --orange-color: #FF8938;
+    --linear-main: linear-gradient(270deg, #FF0000 0%, #FF8938 100%);
+    --linear-2: linear-gradient(136.2deg, rgba(255, 160, 95, 0.8) 15.34%, rgba(132, 242, 27, 0.8) 80.65%);
+    --body-bg: #FFFFFF;
+}
+
+/*** Common CSS ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-Manrope);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: var(--dark-03);
+    background-color: var(--body-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-Manrope);
+    line-height: 1.2;
+    color: var(--dark-01);
+}
+
+a {
+    color: var(--dark-03);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a,
+a:hover,
+a:focus .button:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol li,
+ul li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.section-ptb {
+    padding-top: 8.125rem;
+    padding-bottom: 6.625rem;
+}
+
+/* Selection */
+::-webkit-selection {
+    background-color: var(--orange-color);
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background-color: var(--orange-color);
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: var(--orange-color);
+    color: #fff;
+    text-shadow: none;
+}
+
+/*** Container Default CSS ***/
+.container {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*** Grid System (Flexbox-based) ***/
+/* Base Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Base Column Padding */
+[class^="col"] {
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+
+/* Default (mobile - col-*) */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*** Helpers Classes ***/
+/* Font Family */
+.font-Manrope {
+    font-family: var(--font-Manrope);
+}
+
+/* Color */
+.dark-01 {
+    color: var(--dark-01);
+}
+
+.dark-02 {
+    color: var(--dark-02);
+}
+
+.dark-03 {
+    color: var(--dark-03);
+}
+
+.dark-04 {
+    color: var(--dark-04);
+}
+
+.dark-05 {
+    color: var(--dark-05);
+}
+
+.dark-06 {
+    color: var(--dark-06);
+}
+
+.dark-07 {
+    color: var(--dark-07);
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+.orange-color {
+    color: var(--orange-color);
+}
+
+.linear-main-bg {
+    background: var(--linear-main);
+}
+
+.linear-2 {
+    background: var(--linear-2);
+}
+
+.body-bg {
+    background: var(--body-bg);
+}
+
+/* [ Buttons ] */
+/*================================================== */
+.button {
+    border: 0;
+    width: max-content;
+    display: inline-block;
+    font-family: var(--font-Manrope);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.938rem 2.625rem;
+    background-color: var(--linear-main);
+    cursor: pointer;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.button:hover {
+    -webkit-box-shadow: inset 0px 0px 135px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 135px rgba(0, 0, 0, 0.25);
+}
+
+/* [ Section Title ] */
+/*================================================== */
+
+/* [ Hero Section Style ] */
+/*================================================== */
