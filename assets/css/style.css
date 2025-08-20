@@ -19,6 +19,7 @@ File Description: Main css file of the template
     + Section Title
     + Header Style
     + Hero Section Style
+    + Featured Products Section
 ------------------------------------------------------------------*/
 
 /* [ General ] */
@@ -119,6 +120,14 @@ img {
 .section-ptb {
     padding-top: 8.125rem;
     padding-bottom: 6.625rem;
+}
+
+.section-pb {
+    padding-bottom: 6.625rem;
+}
+
+.mb-24 {
+    margin-bottom: 1.5rem;
 }
 
 /* Selection */
@@ -294,6 +303,17 @@ img {
 
 /* [ Section Title ] */
 /*================================================== */
+.section-title {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 2.75rem;
+    font-weight: 900;
+    margin-bottom: 1.313rem;
+}
 
 /* [ Hero Section Style ] */
 /*================================================== */
@@ -376,4 +396,48 @@ img {
     font-size: 1.750rem;
     font-weight: 800;
     margin-bottom: 0.125rem;
+}
+
+/* [ Featured Products Section ] */
+/*================================================== */
+.featured-product-wrap {
+    background: linear-gradient(180deg, #F4F4F4 0%, rgba(244, 244, 244, 0) 100%);
+    text-align: center;
+    border-radius: 6px;
+    padding: 1.875rem;
+}
+
+.featured-product-wrap .image img {
+    display: block;
+    margin: auto;
+    transition: all 0.4s ease;
+}
+
+.featured-product-wrap:hover .image img {
+    animation: rorate 0.4s ease;
+    transform: rotate(9deg);
+}
+
+@keyframes rorate {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(9deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(9deg);
+    }
+}
+
+.featured-product-wrap .image {
+    margin-bottom: 1.5rem;
+}
+
+.featured-product-wrap>h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
 }
