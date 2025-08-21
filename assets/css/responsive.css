@@ -270,6 +270,16 @@
     .hero-image {
         margin-top: 1.750rem;
     }
+
+    /* [ Great Tea Section ] */
+    /*================================================== */
+    .great-tea .left-right {
+        margin-left: 0;
+    }
+
+    .great-tea .image-side {
+        margin-bottom: 2.125rem;
+    }
 }
 
 @media screen and (max-width:767px) {
