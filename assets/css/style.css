@@ -22,6 +22,7 @@ File Description: Main css file of the template
     + Featured Products Section
     + Great Tea Section
     + Testimonial Section
+    + News & Events Section
 ------------------------------------------------------------------*/
 
 /* [ General ] */
@@ -613,4 +614,55 @@ img {
     position: absolute;
     right: 24px;
     bottom: 24px;
+}
+
+/* [ News & Events Section ] */
+/*================================================== */
+.news .row {
+    justify-content: center;
+}
+
+.news-post-wrap {
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--dark-05);
+}
+
+.news-post-wrap .image {
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 1.25rem;
+}
+
+.news-post-wrap .image img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.news-post-wrap:hover .image img {
+    transform: scale(1.1);
+}
+
+.news-post-wrap .posted-on {
+    margin-bottom: 0.625rem;
+    display: inline-block;
+}
+
+.news-post-wrap .news-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    font-weight: 900;
+}
+
+.news-post-wrap .learn-more {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--dark-01);
+    font-weight: 700;
+}
+
+.news-post-wrap .learn-more:hover {
+    color: var(--orange-color);
 }

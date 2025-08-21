@@ -247,12 +247,12 @@
 
 @media screen and (max-width: 991px) {
     .section-ptb {
-        padding-top: 6.25rem;
-        padding-bottom: 4.75rem;
+        padding-top: 5.625rem;
+        padding-bottom: 4.125rem;
     }
 
     .section-pb {
-        padding-bottom: 4.75rem;
+        padding-bottom: 4.125rem;
     }
 
     /* [ Buttons ] */
@@ -298,12 +298,12 @@
 
 @media screen and (max-width:767px) {
     .section-ptb {
-        padding-top: 5.875rem;
-        padding-bottom: 4.375rem;
+        padding-top: 4.125rem;
+        padding-bottom: 2.625rem;
     }
 
     .section-pb {
-        padding-bottom: 4.375rem;
+        padding-bottom: 2.625rem;
     }
 
     /* [ Section Title ] */
