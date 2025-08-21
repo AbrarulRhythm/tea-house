@@ -290,6 +290,10 @@
     .testimonial-wrapper {
         margin-top: 3rem;
     }
+
+    .testimonial-inner::before {
+        content: unset;
+    }
 }
 
 @media screen and (max-width:767px) {

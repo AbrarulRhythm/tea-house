@@ -532,6 +532,21 @@ img {
     padding: 5.313rem 4.375rem;
     border-radius: 6px;
     background: linear-gradient(270deg, #FF0000 0%, #FF8938 100%);
+    position: relative;
+}
+
+.testimonial-inner::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('../images/bg_cup.png');
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .testimonial-inner .row {
