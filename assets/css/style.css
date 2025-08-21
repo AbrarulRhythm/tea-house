@@ -21,6 +21,7 @@ File Description: Main css file of the template
     + Hero Section Style
     + Featured Products Section
     + Great Tea Section
+    + Testimonial Section
 ------------------------------------------------------------------*/
 
 /* [ General ] */
@@ -297,9 +298,24 @@ img {
     transition: all .4s ease;
 }
 
+.button-white {
+    background: var(--white-color);
+}
+
+.button-white span {
+    background: linear-gradient(270deg, #FF0000 0%, #FF8938 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .button:hover {
     -webkit-box-shadow: inset 0px 0px 135px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0px 0px 135px rgba(0, 0, 0, 0.25);
+}
+
+.button-white:hover {
+    box-shadow: none;
 }
 
 /* [ Section Title ] */
@@ -508,4 +524,78 @@ img {
     font-size: 1.25rem;
     font-weight: 900;
     margin-bottom: 0.5rem;
+}
+
+/* [ Testimonial Section ] */
+/*================================================== */
+.testimonial-inner {
+    padding: 5.313rem 4.375rem;
+    border-radius: 6px;
+    background: linear-gradient(270deg, #FF0000 0%, #FF8938 100%);
+}
+
+.testimonial-inner .row {
+    align-items: center;
+}
+
+.testimonial-inner .section-title {
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 1.75rem;
+}
+
+.testimonial-inner .section-title h1,
+.testimonial-inner .section-title p {
+    color: var(--white-color);
+}
+
+.testimonial-wrapper {
+    position: relative;
+    float: right;
+}
+
+.testimonial-content {
+    max-width: 433px;
+    background: var(--white-color);
+    border-radius: 6px;
+    padding: 2.5rem 2.5rem 2.5rem 3.25rem;
+    position: relative;
+    opacity: .2;
+}
+
+.testimonial-content.active {
+    position: absolute;
+    top: 50%;
+    left: -130px;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 1;
+}
+
+.testimonial-content:not(:last-child) {
+    margin-bottom: 3.25rem;
+}
+
+.testimonial-content .client-image {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    border: 4px solid #FFF;
+    border-radius: 50%;
+}
+
+.testimonial-content .client-info {
+    margin-top: 1.313rem;
+}
+
+.testimonial-content .client-info h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.125rem;
+}
+
+.testimonial-content .circles {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
 }

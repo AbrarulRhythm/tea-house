@@ -280,6 +280,16 @@
     .great-tea .image-side {
         margin-bottom: 2.125rem;
     }
+
+    /* [ Testimonial Section ] */
+    /*================================================== */
+    .testimonial-inner {
+        padding: 3.625rem 3rem;
+    }
+
+    .testimonial-wrapper {
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -343,5 +353,23 @@
 
     .popup-reating span {
         font-size: 0.875rem;
+    }
+
+    /* [ Testimonial Section ] */
+    /*================================================== */
+    .testimonial-inner {
+        padding: 3rem 2.375rem;
+    }
+
+    .testimonial-wrapper {
+        margin-top: 3.875rem;
+    }
+
+    .testimonial-content:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    .testimonial-content.active {
+        left: 0;
     }
 }
